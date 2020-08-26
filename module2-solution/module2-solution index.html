@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>First web page </title>
+    
+    <style>
+       
+        *{
+            margin:20px;
+            box-sizing: border-box;
+        }
+       .col-md-4{
+
+            align-items: center;
+            height:auto;
+            background-color:darkgray;
+            border: 1px solid black;
+            overflow:auto;
+        }
+        .small-box{
+            width: 30%;
+            padding: 5px;
+            margin:0;
+            border: 1px solid black;
+            float:right ;
+            font-size:18px;
+            text-align: center;
+
+        }
+        @media (min-width: 992px) {
+        .col-md-4{
+                     float: left;
+                     width: 30%;
+                 }
+        }
+        @media (min-width: 768px) and (max-width: 992px) {
+        
+            .col-md-4{
+                         float: left;
+                         width: 40%;
+                     }
+        }
+        @media (max-width:767px){
+            .col-md-4{
+                float: left;
+                width:50%;
+            }
+
+        }
+        .color1{
+            background-color: brown;
+        }
+        .color2{
+            background-color:green;
+        }
+        .color3{
+            background-color:yellow;
+        }
+
+    </style>
+    </head>
+    <body>
+     <h1 style="text-align: center;">our menu</h1>
+     <div class="col-md-4">
+         <div class="small-box color1">chicken</div>
+         <p>Warning: While not specifying borders and colors according
+              to the requirements does not hurt your grade so much,
+               not doing so will make it much harder for your classmates
+                to peer grade the rest of your assignment,
+                 possibly resulting in a much lower grade.</p>
+         </div>
+     <div class="col-md-4">
+        <div class="small-box color2">Beef</div>
+        <p>Warning: While not specifying borders and colors according
+             to the requirements does not hurt your grade so much,
+              not doing so will make it much harder for your classmates 
+              to peer grade the rest of your assignment,
+               possibly resulting in a much lower grade</p>
+        </div>
+    <div class="col-md-4">
+        <div class="small-box color3">Sushi</div>
+        <p>Warning: While not specifying borders and colors according
+             to the requirements does not hurt your grade so much, 
+             not doing so will make it much harder for your classmates 
+             to peer grade the rest of your assignment, 
+             possibly resulting in a much lower grade</p>
+        </div>
+    </body>
+</html>
